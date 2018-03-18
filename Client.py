@@ -4,7 +4,7 @@ import signal
 import time
 
 # Create a TCP/IP socket
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 def signal_handler(signal, frame):
   global sock
